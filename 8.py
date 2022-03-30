@@ -1,7 +1,9 @@
 import numpy as np, cv2
 
-img1 = np.full((200, 300), 100, np.uint8)
-img2 = np.full((200, 300), 100, np.uint8)
+img1 = np.zeros((200, 300), np.uint8) #300행 400열의 행렬 생성
+img2 = np.zeros((200, 300), np.uint8)
+img1[:] = 0
+img2[:] = 0
 
 title1, title2 = 'WINDOW1', 'WINDOW2'
 
