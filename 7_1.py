@@ -1,6 +1,6 @@
 import numpy as np,cv2
 
-image = np.zeros((300, 400, 3), np.uint8)
+image = np.zeros((300, 400, 3), np.uint8) #np.uint8 : 그레이스케일 표현방법
 image[:]= (255, 255, 255)
 
 pt1, pt2 = (50, 130), (200, 300)
