@@ -1,8 +1,8 @@
 import sys
 import numpy as np, cv2
 
-image1 = np.zeros((50, 512), np.float32)
-image2 = np.zeros((50, 512), np.float32)
+image1 = np.zeros((50, 512), np.uint8)
+image2 = np.zeros((50, 512), np.uint8)
 rows, cols = image1.shape[:2]
 
 for i in range(rows):
