@@ -1,6 +1,6 @@
 import numpy as np, sys, cv2
 
-cap1 = cv2.VideoCapture(0)
+cap1 = cv2.VideoCapture("bomb.mp4")
 
 if not cap1.isOpened():
     print('vidieo open failed!')
@@ -43,7 +43,6 @@ while True:
         if not ret2:
             break
 
-        frame2 = cv2.resize(frame2,(w1,h1))
         hsv = cv2.cvtColor(frame1, cv2.COLOR_BGR2HSV)
         mask = cv2.inRange(hsv,(50,150,0),(150,255,255))
         cv2.copyTo(frame2, mask, frame1)
@@ -51,7 +50,7 @@ while True:
     cv2.imshow('frame', frame1)
     key = cv2.waitKey(delay)
 
-    if key == ord(' '):
+    if key == ord(' '): #스페이스 누르면 실행
         compositFlag = not compositFlag
     elif key == 27:
         break
