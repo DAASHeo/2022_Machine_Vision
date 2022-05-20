@@ -12,7 +12,7 @@ dst2 = cv2.convertScaleAbs(dst2)
 
 cv2.imshow("original", resize)
 cv2.imshow("dst1-vertical_OpenCV", dst1)
-cv2.imshow("dst2-vertical_OpenCV", dst2)
+cv2.imshow("dst2-horizontal_OpenCV", dst2)
 cv2.waitKey()
 
 cv2.destroyAllWindows()
